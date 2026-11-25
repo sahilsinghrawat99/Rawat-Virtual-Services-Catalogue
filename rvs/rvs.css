@@ -1,0 +1,475 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f6fb;
+    color: #252b3b;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    min-height: 75px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 7%;
+    box-shadow: 0 2px 12px #0000000d;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.brand-name {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    color: #555e72;
+}
+
+.nav-status {
+    color: #16a36a;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(120deg, #111d46, #263e81, #5268c8);
+    min-height: 390px;
+    padding: 65px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.small-tag, .tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #a5b4fc;
+    margin-bottom: 17px;
+}
+
+.hero-title {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #d4ddff;
+    margin-top: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: white;
+    color: #233b82;
+}
+
+.secondary-btn {
+    border: 1px solid #ffffff80;
+    color: white;
+}
+
+.hero-box {
+    width: 290px;
+    background: #ffffff15;
+    border: 1px solid #ffffff35;
+    padding: 28px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.hero-icon {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.hero-box-title {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero-box-desc {
+    text-align: center;
+    font-size: 9px;
+    color: #cbd5ff;
+    margin-top: 8px;
+}
+
+.hero-line {
+    height: 1px;
+    background: #ffffff40;
+    margin: 20px 0;
+}
+
+.hero-feature {
+    font-size: 12px;
+    padding: 8px 0;
+    color: #e5eaff;
+}
+
+.main-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tag {
+    color: #5268c8;
+}
+
+.section-heading {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.section-desc {
+    font-size: 13px;
+    color: #81889a;
+    margin-top: 10px;
+}
+
+.category-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0 45px;
+}
+
+.category {
+    background: white;
+    border: 1px solid #e4e7f0;
+    border-radius: 5px;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #596176;
+}
+
+.category.active {
+    background: #263e81;
+    color: white;
+}
+
+.platform-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 35px 0 15px;
+}
+
+.platform-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.youtube {
+    background: #e52d27;
+}
+
+.instagram {
+    background: #bd398f;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.twitter {
+    background: #111;
+}
+
+.platform-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.platform-count {
+    margin-left: auto;
+    font-size: 10px;
+    color: #8991a3;
+    font-weight: bold;
+}
+
+.service-table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e5e8f0;
+    box-shadow: 0 4px 15px #263e8108;
+}
+
+.table-header, .service-row {
+    display: grid;
+    grid-template-columns: 65px 1fr 130px 65px;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+}
+
+.table-header {
+    background: #edf1fa;
+    font-size: 11px;
+    font-weight: bold;
+    color: #64708c;
+}
+
+.service-row {
+    font-size: 13px;
+    border-top: 1px solid #edf0f5;
+    color: #525b70;
+    transition: .2s;
+}
+
+.service-row:hover {
+    background: #f5f7ff;
+}
+
+.price {
+    color: #263e81;
+    font-weight: bold;
+}
+
+.subscription-heading {
+    margin-top: 75px;
+}
+
+.subscription-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.subscription-card {
+    background: white;
+    padding: 22px;
+    border: 1px solid #e5e8f0;
+    border-radius: 9px;
+    transition: .2s;
+}
+
+.subscription-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px #263e8115;
+}
+
+.subscription-icon {
+    width: 43px;
+    height: 43px;
+    background: #edf1ff;
+    color: #354b9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.subscription-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.subscription-price {
+    font-size: 23px;
+    font-weight: bold;
+    color: #263e81;
+    margin-top: 12px;
+}
+
+.subscription-price span {
+    font-size: 11px;
+    color: #9299a9;
+    font-weight: normal;
+}
+
+.footer {
+    background: #111d46;
+    color: white;
+    text-align: center;
+    padding: 45px 15px 20px;
+    margin-top: 60px;
+}
+
+.footer-logo {
+    font-size: 55px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer-title {
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+}
+
+.footer-description {
+    font-size: 12px;
+    color: #aab9ed;
+    margin-top: 12px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff25;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 11px;
+    color: #aab9ed;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .brand-name {
+        font-size: 11px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .nav-status {
+        font-size: 9px;
+    }
+
+    .hero {
+        padding: 45px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-box {
+        width: 100%;
+    }
+
+    .main-container {
+        padding: 35px 12px;
+    }
+
+    .section-heading {
+        font-size: 21px;
+    }
+
+    .category-bar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .category {
+        white-space: nowrap;
+    }
+
+    .platform-name {
+        font-size: 15px;
+    }
+
+    .table-header, .service-row {
+        grid-template-columns: 35px minmax(0, 1fr) 75px 30px;
+        gap: 5px;
+        padding: 14px 8px;
+        font-size: 11px;
+    }
+
+    .table-header {
+        font-size: 10px;
+    }
+
+    .service-row > div:nth-child(2) {
+        overflow-wrap: anywhere;
+    }
+
+    .subscription-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .subscription-card {
+        padding: 15px 11px;
+    }
+
+    .subscription-name {
+        font-size: 12px;
+    }
+
+    .subscription-price {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 350px) {
+    .subscription-grid {
+        grid-template-columns: 1fr;
+    }
+}
